@@ -1,9 +1,9 @@
 # cvlabs
 
 This repository contains all necessary sources codes for our class
-
-* [Lab0](./Lab0.md)
-* [Lab1](./Lab1.md)
+* Labs
+  * [Lab0](./Lab0.md)
+  * [Lab1](./Lab1.md)
 
 
 * Chapter02
