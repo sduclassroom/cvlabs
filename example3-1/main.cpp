@@ -22,5 +22,6 @@ int main(int argc, char*argv[]) {
     cout << "p3 x p4 = " << p3.cross(p4) << endl;
     cout << "p3 * p4 = " << p3.dot(p4) << endl;
 
+
     return 0;
 }
