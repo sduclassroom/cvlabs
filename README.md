@@ -3,6 +3,9 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab2
+* [x3-3: About Matx<> & Vec<> Templates](./x3-3/)
+* [x3-2: About Matx & Vec](./x3-2/)
+* [x3-1: About Point2f](./x3-1/)
 * [Example3-5: ](./example3-5/)
 * [Example3-4: ](./example3-4/)
 * [Example3-3: ](./example3-3/)
