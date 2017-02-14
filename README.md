@@ -5,14 +5,14 @@ This repository contains all necessary sources codes for our class
 ## Lab2
 * [x4-2: ](lab2/x4-2/)
 * [x4-1: ](lab2/x4-1/)
-* [x3-3: About Matx<> & Vec<> Templates](lab2/x3-3/)
-* [x3-2: About Matx & Vec](lab2/x3-2/)
-* [x3-1: About Point2f](lab2/x3-1/)
-* [Example3-5: ](lab2/example3-5/)
-* [Example3-4: ](lab2/example3-4/)
-* [Example3-3: ](lab2/example3-3/)
-* [Example3-2: ](lab2/example3-2/)
-* [Example3-1: ](lab2/example3-1/)
+* [x3-3: Matx<int,n,m> & Vec<n,int> Templates](lab2/x3-3/)
+* [x3-2: Matx33f & Vec3f](lab2/x3-2/)
+* [x3-1: Point2f vs Point(aka Point2i) and some utility functions](lab2/x3-1/)
+* [Example3-5: Template Classes](lab2/example3-5/)
+* [Example3-4: Matx{1,2,...}{1,2...}{f,d,...} Classes](lab2/example3-4/)
+* [Example3-3: Size and Rect Classes](lab2/example3-3/)
+* [Example3-2: Scalar Classes](lab2/example3-2/)
+* [Example3-1: Point Classes](lab2/example3-1/)
 
 ## Lab1
 
