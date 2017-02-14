@@ -1,8 +1,8 @@
-*/bin/
-*/obj/
-*/*.cbp
-*/*.depend
-*/*.layout
-*/*.jpg
-*/*.mp4
+**/bin/
+**/obj/
+**/*.cbp
+**/*.depend
+**/*.layout
+**/*.jpg
+**/*.mp4
 
