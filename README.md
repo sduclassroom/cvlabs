@@ -3,7 +3,7 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab2
-* [x4-1: ](./x4-2/)
+* [x4-2: ](./x4-2/)
 * [x4-1: ](./x4-1/)
 * [x3-3: About Matx<> & Vec<> Templates](./x3-3/)
 * [x3-2: About Matx & Vec](./x3-2/)
@@ -11,6 +11,8 @@ This repository contains all necessary sources codes for our class
 * [Example3-5: ](./example3-5/)
 * [Example3-4: ](./example3-4/)
 * [Example3-3: ](./example3-3/)
+* [Example3-2: ](./example3-2/)
+* [Example3-1: ](./example3-1/)
 
 ## Lab1
 
