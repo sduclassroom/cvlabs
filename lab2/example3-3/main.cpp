@@ -21,7 +21,10 @@ int main(int argc, char*argv[]) {
     Rect r(50,20,200,100);
     cout << r << endl;
     Mat C = A(r);
+
+    circle(C,Point(20,20),5,Scalar(0,255,0),2);
     imshow("C",C);
+    imshow("A",A);
     waitKey(0);
 
     return 0;
