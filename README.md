@@ -9,6 +9,7 @@ This repository contains all necessary sources codes for our class
 ## Lab2
 * [x4-2: ... is Up-To-You ](lab2/x4-2/)
 * [x4-1: Creating Typewriter with Rect etc. (stub code) ](lab2/x4-1/)
+* [Example4-0-5: Saturation Casting saturate_cast<>()](lab2/example4-0-5)
 * [Example4-0-4: Accessing Elements using MatConstIterator_<> or MatIterator_<>](lab2/example4-0-4)
 * [Example4-0-3: Accessing Elements using at<>() and ptr<>()](lab2/example4-0-3)
 * [Example4-0-2: Ins and Outs of "Raster Scan Order"](lab2/example4-0-2)
