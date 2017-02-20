@@ -2,9 +2,15 @@
 
 This repository contains all necessary sources codes for our class
 
+## Lab4
+
+## Lab3
+
 ## Lab2
-* [x4-2: not yet... ](lab2/x4-2/)
+* [x4-2: ... is Up-To-You ](lab2/x4-2/)
 * [x4-1: Creating Typewriter with Rect etc. (stub code) ](lab2/x4-1/)
+* [Example4-00: Accessing Elements](lab2/example4-00)
+* [Example4-0: Creating an Array](lab2/example4-0)
 * [x3-3: Matx<int,n,m> & Vec<n,int> Templates](lab2/x3-3/)
 * [x3-2: Matx33f & Vec3f](lab2/x3-2/)
 * [x3-1: Point2f vs Point(aka Point2i) and some utility functions](lab2/x3-1/)
