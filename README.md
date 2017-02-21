@@ -3,6 +3,11 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab4
+* [x6-5: ???](lab4/x6-5/)
+* [x6-4: ???](lab4/x6-4/)
+* [x6-3: Drawing _frame per second_ in a Video](lab4/x6-3/)
+* [x6-2: Drawing Text on a Grayscale RGB Image](lab4/x6-2/)
+* [x6-1: Drawing Figures ](lab4/x6-1/)
 
 ## Lab3
 * [x5-6: `split()`, `minMaxLoc()`, `compare()`, `subtract()` ](lab3/x5-6/)
