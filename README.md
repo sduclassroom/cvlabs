@@ -5,6 +5,9 @@ This repository contains all necessary sources codes for our class
 ## Lab4
 
 ## Lab3
+* [x5-6: `split()`, `minMaxLoc()`, `compare()`, `subtract()` ](lab3/x5-6/)
+* [x5-5: ROI and `bitwise_not()` ](lab3/x5-5/)
+* [x5-4: "Gray Pyramid", using `Mat::adjustROI()`? ](lab3/x5-4/)
 * [x5-3: Green Square Using Pointer Arithmentics](lab3/x5-3/)
 * [x5-2: Green Square Using member methods of `Mat`](lab3/x5-2/)
 * [x5-1: Drawing Circle :)](lab3/x5-1/)
