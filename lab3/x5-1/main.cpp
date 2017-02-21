@@ -15,6 +15,9 @@ b. Display this image using methods described in Chapter 2.
 using namespace cv;
 
 int main(int argc, char*argv[]) {
-    // your code here
+    Mat M(100,100,CV_8UC3,Scalar(0,0,0));
+    circle(M,Point(30,40),25,Scalar(0,0,255),2);
+    imshow("M",M);
+    waitKey(0);
     return 0;
 }

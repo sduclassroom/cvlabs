@@ -5,4 +5,4 @@
 **/*.layout
 **/*.jpg
 **/*.mp4
-
+**/main2.cpp

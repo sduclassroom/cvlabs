@@ -21,17 +21,25 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char*argv[]) {
-    int dx=20;
-    int dy=40;
-    int nx=25;
-    int ny=20;
-    Scalar bgcolor(100);
-    Mat M(dx*nx,dy*ny,CV_8UC1,bgcolor);
+    const int dx=20;
+    const int nx=25;
+    const int dy=40;
+    const int ny=10;
+
+    uchar bgcolor = 100;
+    uchar white = 255;
+
+    Vec3b col[10] = {Vec3b(0,150,0), Vec3b(0,0,150),Vec3b(150,0,0),Vec3b(100,100,0),Vec3b(0,100,100),
+                      Vec3b(100,0,100), Vec3b(150,0,150),Vec3b(125,100,0),Vec3b(0,50,100),Vec3b(0,50,0)};
+
+    Mat M(dy*ny,dx*nx,CV_8UC1,bgcolor);
+
     vector<vector<char> > T(ny,vector<char>(nx,'\0'));
+    //static char T[ny][nx]; // this one would also do
 
     Rect R(0,0,dx,dy);
     for(;;){
-        rectangle(M,R,Scalar(255));
+        rectangle(M,R,white);
 
         imshow("M",M);
         Mat C = M(R);
@@ -42,7 +50,7 @@ int main(int argc, char*argv[]) {
         if (ch>='0' && ch <= '9'){
             M(R)=bgcolor;
             rectangle(M,R,bgcolor);
-            putText(C,string(1,ch),Point(0,dy-5),FONT_HERSHEY_PLAIN,1.5,Scalar(255),1);
+            putText(C,string(1,ch),Point(0,dy-5),FONT_HERSHEY_PLAIN,1.5,white,1);
             T[R.y/dy][R.x/dx] = ch;
 
             if (R.x+dx<M.cols) {
@@ -102,16 +110,8 @@ int main(int argc, char*argv[]) {
             }
 
             if (ch==32){
-                Scalar rgb(100,100,23);
-                Mat N(dy*ny,dx*nx,CV_8UC3,rgb);
-                for(int i=0;i<ny;i++){
-                    for(int j=0;j<nx;j++){
-                        Rect R(j*dx,i*dy,dx,dy);
-                        Mat C = M(R);
-                        putText(C,string(1,T[i][j]),Point(0,dy-5),FONT_HERSHEY_PLAIN,1.5,Scalar(0,255,0),1);
-                    }
-                }
-
+                Vec3b color(150,255,255); // yellow?
+                Mat N(dy*ny,dx*nx,CV_8UC3,color);
                 imshow("N",N);
 
             }
