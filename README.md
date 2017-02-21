@@ -5,9 +5,12 @@ This repository contains all necessary sources codes for our class
 ## Lab4
 
 ## Lab3
+* [x5-3: Green Square Using Pointer Arithmentics](lab3/x5-3/)
+* [x5-2: Green Square Using member methods of `Mat`](lab3/x5-2/)
+* [x5-1: Drawing Circle :)](lab3/x5-1/)
 
 ## Lab2
-* [x4-2: ... is Up-To-You ](lab2/x4-2/)
+* [x4-2: ... is up to you ](lab2/x4-2/)
 * [x4-1: Creating Typewriter with Rect etc. (stub code) ](lab2/x4-1/)
 * [Example4-0-5: Saturation Casting saturate_cast<>()](lab2/example4-0-5)
 * [Example4-0-4: Accessing Elements using MatConstIterator_<> or MatIterator_<>](lab2/example4-0-4)
