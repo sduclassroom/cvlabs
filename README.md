@@ -3,6 +3,7 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab5
+* [Example10-0-1: `cv::copyMakeBorder()` extrapolation ](lab5/example10-0-1/main.cpp)
 * [Example10-1: `cv::threshold()` textbook example ](lab5/example10-1/main.cpp)
 
 ## Lab4
