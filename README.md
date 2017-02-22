@@ -2,6 +2,9 @@
 
 This repository contains all necessary sources codes for our class
 
+## Lab5
+* [Example10-1: `cv::threshold()` textbook example ](lab5/example10-1/main.cpp)
+
 ## Lab4
 * [x6-5: ???](lab4/x6-5/)
 * [x6-4: ???](lab4/x6-4/)
