@@ -1,4 +1,4 @@
-//Example 10-A:
+//Example 10-A: Linear Filter = Convolution, in this case it is mean filter producing blurring effect
 #include <iostream>
 #include <opencv2/opencv.hpp>
 

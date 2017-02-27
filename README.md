@@ -3,8 +3,9 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab5
-* [Example10-0-1: `cv::copyMakeBorder()` extrapolation ](lab5/example10-0-1/main.cpp)
-* [Example10-1: `cv::threshold()` textbook example ](lab5/example10-1/main.cpp)
+* [Example10-B: `cv::copyMakeBorder()` extrapolation ](lab5/example10-B.cpp)
+* [Example10-A: Linear filter (mean filter) with `filter2D()` ](lab5/example10-B.cpp)
+* [Example10-1: `cv::threshold()` textbook example ](lab5/example10-1.cpp)
 
 ## Lab4
 * [x6-5: ???](lab4/x6-5/)
@@ -55,4 +56,4 @@ This repository contains all necessary sources codes for our class
 
 ## Lab 0
 * [First Program in OpenCV ](lab0/example2-1/)
-* [Rational Numebers](lab0/Rat/)
+* [Rational Numbers](lab0/Rat/)

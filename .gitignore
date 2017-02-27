@@ -14,3 +14,8 @@
 **/*.jpg
 **/*.mp4
 **/main?.cpp
+**/example.cpp
+
+# except images
+!**/images/*.jpg
+!**/images/*.png
