@@ -1,8 +1,16 @@
+# ignore code::blocks projects files and executables
 **/bin/
 **/obj/
 **/*.cbp
 **/*.depend
 **/*.layout
+
+# ignore clion project files and executables
+**/cmake-build-debug/
+**/.idea/
+**/CMakeLists.txt
+
+# ignore other files
 **/*.jpg
 **/*.mp4
 **/main?.cpp

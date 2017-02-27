@@ -11,11 +11,13 @@ int main(int argc, char*argv[]) {
     Mat M(300,300,CV_8UC3,Scalar(0,0,0));
 
     long t0 = getTickCount();
+
     for(int i=5;i<=200;i++){
         Vec3b* p = M.ptr<Vec3b>(i);
         for(int j=20;j<=40;j++)
             p[j][1] = 255;
     }
+
     long t1 = getTickCount();
 
     cout << t1 - t0 << endl;

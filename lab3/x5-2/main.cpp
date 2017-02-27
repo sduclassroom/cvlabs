@@ -12,12 +12,15 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char*argv[]) {
-    Mat M(300,300,CV_8UC3,Scalar(0,0,0));
+    Vec3b black(0,0,0);
+
+    Mat M(300,300,CV_8UC3,black);
 
     long t0 = getTickCount();
+
     for(int i=5;i<=200;i++)
     for(int j=20;j<=40;j++)
-        M.at<Vec3b>(i,j)[1] = 255;
+        M.at<Vec3b>(i,j)[1] = 128;
 
     long t1 = getTickCount();
 
