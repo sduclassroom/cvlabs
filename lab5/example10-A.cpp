@@ -6,7 +6,7 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    Mat A = imread("images/smallbirds.jpg",IMREAD_GRAYSCALE);
+    Mat A = imread("images/birds.jpg",IMREAD_GRAYSCALE);
     Mat B;
     Matx33f K = 1/9.0 * Matx33f::ones();
     filter2D(A, B, CV_8UC1, K);

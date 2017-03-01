@@ -10,7 +10,7 @@ int main() {
     int flags = WINDOW_GUI_EXPANDED;
     Mat B;
 
-    threshold(A,B,150,255,THRESH_BINARY);
+    threshold(A,B,50,255,THRESH_BINARY);
 
     namedWindow("original",flags);
     imshow("original",A);
