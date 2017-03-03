@@ -5,6 +5,7 @@ This repository contains all necessary sources codes for our class
 ## Lab5
 * [Lab5.4: Starting Stub for Task4 of Lab5 (only dilation) ](lab5/lab5task4.cpp)
 * [Lab5.1: Starting Stub for Task1 of Lab5 (only simple threshold) ](lab5/lab5task1.cpp)
+* [Example10-F: Edge Detection with Sobel Derivtive](lab5/example10-F.cpp)
 * [Example10-E: `ADAPTIVE_THRESH_MEAN_C` & `ADAPTIVE_THRESH_GAUSSIAN_C`](lab5/example10-E.cpp)
 * [Example10-D: `THRESH_OTSU` & `THRESH_TRIANGLE`](lab5/example10-D.cpp)
 * [Example10-C: `THRESH_BINARY` ](lab5/example10-C.cpp)
