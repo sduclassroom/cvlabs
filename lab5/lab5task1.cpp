@@ -5,7 +5,7 @@
 using namespace std;
 using namespace cv;
 
-int t = 120;
+int t = 20;
 int accept_color = 255;
 Mat A,B;
 
@@ -25,6 +25,8 @@ int main() {
     A = imread("images/page.jpg",IMREAD_GRAYSCALE);
 
     namedWindow("THRESHOLD EXAMPLE");
+    namedWindow("ORIGINAL");
+    imshow("ORIGINAL",A);
 
     createTrackbar("threshold","THRESHOLD EXAMPLE",&t,255,onThresholdChange);
     createTrackbar("color","THRESHOLD EXAMPLE",&accept_color,255,onColorChange);

@@ -3,6 +3,7 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab5
+* [Lab5.4: Starting Stub for Task4 of Lab5 (only dilation) ](lab5/lab5task4.cpp)
 * [Lab5.1: Starting Stub for Task1 of Lab5 (only simple threshold) ](lab5/lab5task1.cpp)
 * [Example10-E: `ADAPTIVE_THRESH_MEAN_C` & `ADAPTIVE_THRESH_GAUSSIAN_C`](lab5/example10-E.cpp)
 * [Example10-D: `THRESH_OTSU` & `THRESH_TRIANGLE`](lab5/example10-D.cpp)
@@ -12,8 +13,6 @@ This repository contains all necessary sources codes for our class
 * [Example10-1: `cv::threshold()` textbook example ](lab5/example10-1.cpp)
 
 ## Lab4
-* [x6-5: ???](lab4/x6-5/)
-* [x6-4: ???](lab4/x6-4/)
 * [x6-3: Drawing _frame per second_ in a Video](lab4/x6-3/)
 * [x6-2: Drawing Text on a Grayscale RGB Image](lab4/x6-2/)
 * [x6-1: Drawing Figures ](lab4/x6-1/)

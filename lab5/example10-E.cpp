@@ -7,6 +7,7 @@ using namespace cv;
 
 int main() {
     Mat A = imread("./images/page.jpg",IMREAD_GRAYSCALE);
+    imshow("ORG",A);
     Mat B,C,D;
 
     adaptiveThreshold(A,B,255,ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY, 7, 10);
