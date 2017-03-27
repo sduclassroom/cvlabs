@@ -5,33 +5,41 @@
 using namespace std;
 using namespace cv;
 
-int t = 20;
-int accept_color = 255;
-Mat A,B;
+int s=7;
+int c=100;
 
-void onThresholdChange(int pos, void*){
-    t=pos;
-    threshold(A,B,t,accept_color,THRESH_BINARY);
-    imshow("THRESHOLD EXAMPLE",B);
+Mat A,Bmean,Bgaus;
+
+void onCChange(int newc, void*){
+    c = newc;
+    adaptiveThreshold(A,Bmean,255,ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    adaptiveThreshold(A,Bgaus,255,ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    imshow("MEAN",Bmean);
+    imshow("GAUSSIAN",Bgaus);
 }
 
-void onColorChange(int pos, void*){
-    accept_color=pos;
-    threshold(A,B,t,accept_color,THRESH_BINARY);
-    imshow("THRESHOLD EXAMPLE",B);
+void onSize1Change(int news, void *){
+    s = news;
+    adaptiveThreshold(A,Bmean,255,ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    adaptiveThreshold(A,Bgaus,255,ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    imshow("MEAN",Bmean);
+    imshow("GAUSSIAN",Bgaus);
+
 }
 
 int main() {
     A = imread("images/page.jpg",IMREAD_GRAYSCALE);
 
-    namedWindow("THRESHOLD EXAMPLE");
     namedWindow("ORIGINAL");
     imshow("ORIGINAL",A);
 
-    createTrackbar("threshold","THRESHOLD EXAMPLE",&t,255,onThresholdChange);
-    createTrackbar("color","THRESHOLD EXAMPLE",&accept_color,255,onColorChange);
-    threshold(A,B,t,accept_color,THRESH_BINARY);
-    imshow("THRESHOLD EXAMPLE",B);
+    createTrackbar("c","ORIGINAL",&c,200,onCChange);
+    createTrackbar("size", "ORIGINAL", &s, 100, onSize1Change);
+    adaptiveThreshold(A,Bmean,255,ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    adaptiveThreshold(A,Bgaus,255,ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY,s/2*2+1,c-100);
+    imshow("MEAN",Bmean);
+    imshow("GAUSSIAN",Bgaus);
     waitKey(0);
+    
     return 0;
 }

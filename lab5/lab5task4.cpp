@@ -5,35 +5,43 @@
 using namespace std;
 using namespace cv;
 
-Mat A,B;
-int s = 3;
+Mat A,B,C;
+int s1 = 1;
+int s2 = 1;
 
 
-void onSizeChange(int pos, void*){
-    s=pos;
-    Mat S = getStructuringElement(MORPH_RECT,Size(s,s),Point(-1,-1));
+void onSize1Change(int pos, void *){
+    if (pos==0) return;
+    s1=pos;
+    Mat S = getStructuringElement(MORPH_RECT,Size(s1,s2));
     dilate(A,B,S);
-    //erode(A,B,S);
-    //morphologyEx(A,B,MORPH_BLACKHAT,S);
+    erode(A,C,S);
     imshow("DILATE",B);
+    imshow("ERODE",C);
+}
+
+void onSize2Change(int pos, void *){
+    if (pos==0) return;
+    s2=pos;
+    Mat S = getStructuringElement(MORPH_RECT,Size(s1,s2));
+    dilate(A,B,S);
+    erode(A,C,S);
+    imshow("DILATE",B);
+    imshow("ERODE",C);
 }
 
 int main() {
-    A = imread("images/page.jpg",IMREAD_GRAYSCALE);
-    bitwise_not(A,A);
-    //threshold(A,A,150,255,THRESH_BINARY);
-
+    Mat Z = imread("images/page.jpg",IMREAD_GRAYSCALE);
+    A = Z(Rect(0,0,200,200));
     namedWindow("ORIGINAL");
     imshow("ORIGINAL",A);
-    createTrackbar("size","ORIGINAL",&s,25,onSizeChange);
-
-    Mat S = getStructuringElement(MORPH_RECT,Size(s,s),Point(-1,-1));
+    createTrackbar("size1", "ORIGINAL", &s1, 25, onSize1Change);
+    createTrackbar("size2", "ORIGINAL", &s2, 25, onSize2Change);
+    Mat S = getStructuringElement(MORPH_RECT,Size(s1,s2),Point(-1,-1));
     dilate(A,B,S);
-    //erode(A,B,S);
-    //morphologyEx(A,B,MORPH_BLACKHAT,S);
-
-    namedWindow("DILATE");
+    erode(A,C,S);
     imshow("DILATE",B);
+    imshow("ERODE",C);
     waitKey(0);
     return 0;
 }
