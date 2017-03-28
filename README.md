@@ -3,7 +3,7 @@
 This repository contains all necessary sources codes for our class
 
 ## Lab6
-* [Canny Edge Detector](lab6/canny_edge.cpp)
+* [Canny Edge Detector](lab6/canny_edges.cpp)
 
 ## Lab5
 * [Lab5.4: Starting Stub for Task4 of Lab5 (only dilation) ](lab5/lab5task4.cpp)
