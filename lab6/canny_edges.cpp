@@ -7,17 +7,8 @@ int t1=100;
 int t2=200;
 Mat A,B;
 
-void onThreshold1Change(int t, void *){
-    t1=t;
-    Canny(A,B,t1,t2);
-    imshow("Canny Edges",B);
-}
-
-void onThreshold2Change(int t, void *){
-    t2=t;
-    Canny(A,B,t1,t2);
-    imshow("Canny Edges",B);
-}
+void onThreshold1Change(int, void *);
+void onThreshold2Change(int, void *);
 
 int main() {
     A = imread("../images/akorda.jpg");
@@ -29,4 +20,16 @@ int main() {
     imshow("Canny Edges",B);
     waitKey(0);
     return 0;
+}
+
+void onThreshold1Change(int t, void *) {
+    t1=t;
+    Canny(A,B,t1,t2);
+    imshow("Canny Edges",B);
+}
+
+void onThreshold2Change(int t, void *) {
+    t2=t;
+    Canny(A,B,t1,t2);
+    imshow("Canny Edges",B);
 }
