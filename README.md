@@ -2,8 +2,11 @@
 
 This repository contains all necessary sources codes for our class
 
-## Lab6
+## Lab 6
+* [**Deskewing Number Plate**](lab6/deskew.cpp)
+* [Hough Lines](lab6/hough_lines.cpp)
 * [Canny Edge Detector](lab6/canny_edges.cpp)
+---
 
 ## Lab5
 * [Lab5.4: Starting Stub for Task4 of Lab5 (only dilation) ](lab5/lab5task4.cpp)
