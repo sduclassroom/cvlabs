@@ -2,6 +2,8 @@
 
 This repository contains all necessary sources codes for our class
 
+## [Final Project Ideas](projects.md)
+
 ## Lab 6
 * [**Deskewing Number Plate**](lab6/deskew.cpp)
 * [Hough Lines](lab6/hough_lines.cpp)
