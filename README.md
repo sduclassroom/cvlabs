@@ -4,6 +4,11 @@ This repository contains all necessary sources codes for our class
 
 ## [Final Project Ideas](projects.md)
 
+## Lab 7
+* [**Implementation of a Simple Background Subtraction Method**](lab7/bgsubt_A.cpp)
+* [`findContours()`](lab7/contours.cpp)
+
+
 ## Lab 6
 * [**Deskewing Number Plate**](lab6/deskew.cpp)
 * [Hough Lines](lab6/hough_lines.cpp)
